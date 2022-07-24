@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: aqua;
+            width:80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            margin: 100px;
+            gap:10px;
+        }
+      .image1{
+        width: 100%;
+        height: 100%;
+        transition: 0.6px;
+        box-shadow: inset 10px 10px 20px black;
+        overflow: hidden;
+        animation-name: moveimg;
+        animation-duration: 4s;
+        opacity:0;
+        transform: translateY(60px);
+        animation-fill-mode: forwards;
+      }
+
+     img:hover{
+        transform:scale(3);
+        
+      }
+        img{
+        width:300px;
+            height: 500px;
+          
+        }
+      .image1:nth-child(2){
+        animation-delay: 1.6s;
+      }
+      .image1:nth-child(3){
+        animation-delay: 2.5s;
+      }
+      .image1:nth-child(4){
+        animation-delay: 3.6s;
+      }
+        
+        @keyframes moveimg {
+            from{
+
+            }
+            to{
+                transform: translateY(0px);
+                opacity:1;
+            }
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="image1">
+<img src="img1.jpeg" alt="">
+        </div>
+        <div class="image1">
+<img src="img2.jpeg" alt="">
+        </div>
+        <div class="image1">
+<img src="img3.jpeg" alt="">
+        </div>
+        <div class="image1">
+            <img src="img4.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
