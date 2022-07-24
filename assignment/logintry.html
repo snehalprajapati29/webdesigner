@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+        <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+        <style>
+            *{
+                margin: 0px;
+                margin: 0px;
+                padding: 0px;
+              
+               
+            }
+            .bgimage{
+                width:100% ;
+                height: 100vh;
+
+            
+            background-image: url(bg7.jpg);
+            background-size: cover;
+           background-repeat: no-repeat;
+            }
+            header{
+                width:100%;
+                height:100px;
+                background-color: cornsilk;
+            }
+           
+            .main{
+             display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            
+            }
+           .box{
+            display: flex;
+            width:800px;
+            height:400px;
+            border-width: 5px;
+            border-color:black;
+            border-style: solid;
+              
+             }
+             .page{
+                justify-content: center;
+                width: 400px;
+               background-color: rgb(155 220 110 );
+               
+             }
+             .image{
+                justify-content: center;
+                width:400px;
+                height: 400px;
+               background-image: url(bg5.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+              
+             }
+             td{
+                padding: 15px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+             }
+             button{
+                padding: 5px;
+                background-color: black;
+                color: white;
+                }
+                marquee{
+                    color:coral;
+                    font-size: 35px;
+
+                }
+                .task1{
+                    width: 30%;
+                    height: 25px;
+                    margin-left: 400px;
+                }
+                ul{
+                    display: flex;
+                    justify-content:center;
+                    justify-content: space-around;
+                    list-style: none;
+                
+                }
+        </style>
+    </head>
+    <body>
+        <div class="bgimage">
+        <header>
+            <marquee behavior="alternate" >D.E.Italia Highschool , Chikhli</marquee>
+            <div class="task">
+                <div class="task1">
+                <ul><li><a href="">Home</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href=""><i class="fa-solid fa-phone"></i>Contact Details</a></li>
+                </ul>
+            </div>
+            </div>
+        </header>
+       
+        <section class="main">
+            <div class="box">
+            <div class="box page">
+                <form method="post" >
+            <h2>Login Page</h2>
+            <table><tr><td>
+            <label for="un">User Name</label></td>
+            <td>
+            <input type="text" id="un" name="user name">
+            </td>
+        </tr>
+        <tr><td>
+            <label for="ps">Password</label></td>
+            <td>
+            <input type="password" id="ps" name="password">
+            </td>
+        </tr>
+        <tr><td>
+            <label for="send">confirom password</label></td>
+            <td>
+            <input type="password" id="ps" name="conpassword">
+            </td>
+        </tr>
+        <tr><td><button >Login</button> <button>Reset</button>
+            </td>
+          
+           
+        </tr>
+        </table>
+          </form>
+        </div>
+        <div class="box image">
+        </div>
+    </div>
+</section>
+</div>
+    </body>
+</html>

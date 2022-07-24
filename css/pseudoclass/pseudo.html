@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Pseudo class
+    </title>
+    <style>
+       
+        h1:hover{
+            background-color: rgba(219, 20, 20, 50);
+            color:greenyellow;
+        }
+        h1{
+            transition-duration: 3s;
+        }
+        input:focus{
+            color: aqua;
+            background-color: burlywood;
+        }
+        button:hover{
+            color: rgb(80, 50,40);
+            background-color: rgb(100 150 20);
+        }
+        button:active{
+
+            background-color: darkorchid;
+            color: green;
+        }
+        .send{
+            width: 150px;
+            height: 80px;
+            padding: 30px;
+            font-size: 20px;
+           
+        }
+     
+        table{
+            border: 1;
+            color: black;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1;
+            color: black;
+            border-style: solid;
+                }
+        table tr:first-child{
+            background-color: blue;
+        }
+        table tr:last-child{
+            background-color: green;
+        }
+        table tr:nth-child(4){
+            background-color: red;
+        }
+        a.visited{
+            color:gray;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>
+        form
+    </h1>
+    <form>
+        <lable>first name</lable> <input type="text">
+        <br>
+        <br>
+        <lable> last name</lable><input type="text">
+        <br>
+        <br>
+
+        <button class="send">send</button>
+
+    </form>
+    
+  <table>
+    <tr>
+        <td>1</td>
+        <td>Snehal</td>
+        <td>Chikhli</td>
+        <td>BCA</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Snehal</td>
+        <td>Chikhli</td>
+        <td>BCA</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Chirag</td>
+        <td>Chikhli</td>
+        <td>BCA</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Shivam</td>
+        <td>Chikhli</td>
+        <td>BCA</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Parth</td>
+        <td>Chikhli</td>
+        <td>BCA</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Ashish</td>
+        <td>Chikhli</td>
+        <td>BCA</td>
+    </tr>
+  </table>
+  <a href="https://www.website.com">website </a>
+</body>

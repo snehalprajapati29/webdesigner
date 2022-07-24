@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>General sibling  selector</title>
+<style>
+    div ~ p{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div>
+        this tag contains General sibling  selector
+    </div>
+    <div>
+        <p>General sibling  selector</p>
+        <section>
+        <p>
+            The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent 
+        </p>
+    </section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorum neque in blanditiis, mollitia tempora iusto non maiores hic quod modi quia aliquam vero natus perspiciatis, voluptate velit eveniet possimus.
+    </p>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorum neque in blanditiis, mollitia tempora iusto non maiores hic quod modi quia aliquam vero natus perspiciatis, voluptate velit eveniet possimus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorum neque in blanditiis, mollitia tempora iusto non maiores hic quod modi quia aliquam vero natus perspiciatis, voluptate velit eveniet possimus.
+    </p>
+</body>

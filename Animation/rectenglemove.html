@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: aquamarine;
+            position: absolute;
+            animation-name: rect-move;
+            animation-duration: 6s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes rect-move{
+           0%{
+            top:0px;
+            left: 0px;
+           }
+           25%{
+            top:0px;
+            left:500px;
+            background-color: brown;
+            transform: rotateX(180deg);
+           }
+           50%{
+            left:500px;
+            top:500px;
+            background-color: chocolate;
+            transform: translateX(30px);
+           }
+           75%{
+            left:0px;
+            top:500px;
+            background-color: darkgreen;
+            transform: scaleX(1.5);
+        }
+           100%{
+            top:0px;
+            left:0px;
+            background-color: fuchsia;
+            transform: skew(40deg);
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

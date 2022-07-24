@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            margin: 100px auto;
+           
+        }/*transform property contains value
+            1.rotateX()
+            2.rotateY()
+            3.rotateZ()
+            4.rotate3D(x,y,z,deg)
+        */
+                .box1:hover{
+            transform:perspective(800px) rotateX(80deg);
+
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 50px auto;
+           
+        }
+.box2:hover{
+    transform: translateY(100px);
+}
+.box3{
+            width: 200px;
+            height: 200px;
+            background-color:aqua;
+            margin: 0px auto;
+           
+        }
+.box3:hover{
+    transform:translate3D(50px,20px,50px,360deg); 
+}
+    </style>
+</head>
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+    
+</body>
+</html>

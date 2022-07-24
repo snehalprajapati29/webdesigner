@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Direct child selector</title>
+<style>
+    div +p{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div>
+        this tag adjecent sibling  selector
+    </div>
+    <div>
+        <p>adjecent sibling  selector</p>
+        <section>
+        <p>
+            The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent         </p>
+    </section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorum neque in blanditiis, mollitia tempora iusto non maiores hic quod modi quia aliquam vero natus perspiciatis, voluptate velit eveniet possimus.
+    </p>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorum neque in blanditiis, mollitia tempora iusto non maiores hic quod modi quia aliquam vero natus perspiciatis, voluptate velit eveniet possimus.
+    </p>
+</body>
