@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: black;
+            animation-name: moving;
+            animation-duration: 4s;
+        }
+        @keyframes moving {
+            0%{
+                transform: rotate(180deg);
+            }
+            10%{
+                transform: translate(0);
+            }
+            20%{
+                transform: translate(50px);
+            }
+            30%{
+                transform: skew(360deg);
+            }
+            40%{
+                box-shadow: inset 10px 10px 20px red;
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            60%{
+                transform: translate(0);
+            }
+            70%{
+                transform: translate(50px);
+            }
+            80%{
+                transform: skew(360deg);
+            }
+            90%{
+                box-shadow: inset 10px 10px 20px red;
+            }
+            100%{
+                transform: translate(50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
