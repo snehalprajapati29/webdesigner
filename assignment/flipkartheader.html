@@ -14,7 +14,10 @@
         }
         html{
             font-family:Roboto,Arial,sans-serif;
-            
+           
+        }
+        body{
+            background-color: rgb(241,243,246);
         }
         .container{
             width: 100%;
@@ -78,7 +81,34 @@
             color: white;
              padding: 10px; 
              font-size: 15px;       
-        }        
+        }  
+       
+        section{
+            display: grid;
+           grid-template-columns: repeat(9 , 1fr);
+            gap:10px;
+           /* margin-left: 30px;*/
+          background-color: white;
+           }
+
+        .box{
+    
+            text-align: center;
+          }
+    .box-img{
+      width: 100%;
+      height: 80px;
+        overflow: hidden;
+        object-fit: cover;
+    }   
+        img:hover{
+            transform: scale(1.5);
+        }
+        .des h4:hover{
+            color: red;
+        }
+       .des h4{
+        font-size: 15px;       }
     </style>
 </head>
 <body>
@@ -106,5 +136,16 @@
         </div>
     </div>
     </div>
+ <section>
+    <div class="box"><div class="box-img"><img src="mobiles.webp" width="80px" height="80px"></div><div class="des"><h4>Mobiles</h4></div></div>
+    <div class="box"><div class="box-img"><img src="fashion.webp" width="80px" height="80px"></div><div class="des"><h4>Fashion</h4></div></div>
+    <div class="box"><div class="box-img"><img src="electronic.webp" width="80px" height="80px"></div><div class="des"><h4>Electronics</h4></div></div>
+    <div class="box"><div class="box-img"><img src="beauty.webp" width="80px" height="80px"></div><div class="des"><h4>Beauty</h4></div></div>
+    <div class="box"><div class="box-img"><img src="home.webp" width="80px" height="80px"></div><div class="des"><h4>Home</h4></div></div>
+    <div class="box"><div class="box-img"><img src="large.webp" width="80px" height="80px"></div><div class="des"><h4>Large</h4></div></div>
+    <div class="box"><div class="box-img"><img src="furnitur.webp" width="80px" height="80px"></div><div class="des"><h4>furnitur</h4></div></div>
+    <div class="box"><div class="box-img"><img src="travels.webp" width="80px" height="80px"></div><div class="des"><h4>travels</h4></div></div>
+    <div class="box"><div class="box-img"><img src="grocery.webp" width="80px" height="80px"></div><div class="des"><h4>grocery</h4></div></div>
+ </section>
 </body>
 </html>
