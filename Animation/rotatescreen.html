@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100%;
+            height:100vh;
+          position: fixed;
+          top: 0px;
+         
+        }
+        .left-box{
+            background-color: blueviolet;
+            left: 0px;
+            animation-name: left-move;
+            animation-duration: 2s;
+            animation-delay: 2s;
+          animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        .right-box{
+            background-color: aqua;
+            right:0px;
+            animation-name: right-move;
+            animation-duration: 2s;
+           
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+    
+        @keyframes left-move {
+            from{
+
+            }
+            to{
+                
+                left: -100%;
+            }
+            
+        }
+        @keyframes right-move {
+            from{
+
+            }
+            to{
+                top:0px;
+                right:-100%;
+                
+            }
+            
+        }
+        h1{
+            font-family: serif;
+            transform: translateY(500px);
+            opacity: 0;
+            animation-name: textmove;
+            animation-duration: 2s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+        .text-box{
+            margin:100px 200px;
+
+        }
+        @keyframes textmove {
+            from{
+
+            }
+            to{
+                transform: translateY(0px);
+                opacity:1;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="box left-box"></div>
+<div class="box right-box"></div>
+<div class="box text-box">
+<h1>Welcome to animation page. <br>I can try to create animation to move screen color</h1>
+</div>
+</div>
+</body>
+     
+</html>
