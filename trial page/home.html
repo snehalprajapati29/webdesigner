@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .containner{
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns:150px 1fr 1fr;
+        grid-template-rows: 120px 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 5px;
+        }
+    .item{
+        background-color: rgb(213, 196, 230);
+        display: grid;
+           grid-template-columns: repeat(9 , 1fr);
+            gap:10px;
+                 
+           }
+
+    .item1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .item2{
+        grid-row-start:2;
+        grid-row-end: 4;
+    }
+   .item3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: -1;
+   }
+   .box{
+    
+    text-align: center;
+  }
+.box-img{
+width: 100%;
+height: 80px;
+overflow: hidden;
+object-fit: cover;
+}   
+p{
+    margin-left: 35px;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+<div class="containner">
+    <div class="item item1">
+        <div class="box"><div class="box-img"><img src="mobiles.webp" width="80px" height="80px"></div><div class="des"><h4>Mobiles</h4></div></div>
+        <div class="box"><div class="box-img"><img src="fashion.webp" width="80px" height="80px"></div><div class="des"><h4>Fashion</h4></div></div>
+        <div class="box"><div class="box-img"><img src="electronic.webp" width="80px" height="80px"></div><div class="des"><h4>Electronics</h4></div></div>
+        <div class="box"><div class="box-img"><img src="beauty.webp" width="80px" height="80px"></div><div class="des"><h4>Beauty</h4></div></div>
+        <div class="box"><div class="box-img"><img src="home.webp" width="80px" height="80px"></div><div class="des"><h4>Home</h4></div></div>
+        <div class="box"><div class="box-img"><img src="large.webp" width="80px" height="80px"></div><div class="des"><h4>Large</h4></div></div>
+        <div class="box"><div class="box-img"><img src="furnitur.webp" width="80px" height="80px"></div><div class="des"><h4>furnitur</h4></div></div>
+        <div class="box"><div class="box-img"><img src="travels.webp" width="80px" height="80px"></div><div class="des"><h4>travels</h4></div></div>
+        <div class="box"><div class="box-img"><img src="grocery.webp" width="80px" height="80px"></div><div class="des"><h4>grocery</h4></div></div>
+    </div>
+    <div class="item item2">
+        <p>
+        <a href="">Mobiles</a><br><br><br>
+        <a href="">Fashion</a><br><br><br>
+        <a href="">Electronics</a><br><br><br>
+        <a href="">Beauty</a><br><br><br>
+        <a href="">Home</a><br><br><br>
+        <a href="">Large</a><br><br><br>
+        <a href="">furnitur</a><br><b<br><br>
+        <a href="">Travels</a><br><br><br>
+        <a href="">Grocery</a><br>
+            </p>
+    </div>
+    <div class="item item3">
+    </div>
+ </div>    
+</body>
+</html>
