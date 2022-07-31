@@ -5,45 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .main{
+        .container{
         width: 100%;
         height: 100vh;
-        background-color: aqua;
+        background-image: url(backimg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position:relative ;
         }
-    .header{
+    .box{
+        width: 100%;
+        height: 60px;
+        background-color: transparent;
+        padding: 15px;
+        position: fixed;
+        display: flex;
+        }  
+    ul{
+        margin-top: 35px;
+        display:flex ;
         list-style: none;
-        display: grid;
-        grid-template-columns: repeat(7,1fr);
-    }        
+        padding-left: 15px;
+    } 
+    li{
+        padding-left: 20px;
+        padding-top: 50px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+       .right-box{
+      padding-left: 400px;
+       }
+   
+
+       
     </style>
 </head>
 <body>
-    <div class="main">
-        
-        <div class="header">
-            <ul>
-                <li>icon</li>
-                <li>Go Trip</li>
-                <li>Hoome</li>
+   
+   <div class="container">     
+        <div class="box">
+            <div class="left-box">
+            <ul><li> 
+           <h1><span class="fa fa-map-signs"></span>Go Trip</h1></li> 
+                 <li>Home</li>
                 <li>About</li>
                 <li>Explore</li>
-                <li>Pages <ul>
-                    <li>Blog Pages</li>
-                    <li>Blog Single</li>
-                    <li>Landing page</li>
-                </ul></li>
+                <li>Pages </li>
                 <li>Contact</li>
             </ul>
         </div>
-        <div class="slider">
-            <img src="" alt="">
+            <div class="right-box">
+            <ul>
+                <li><span class="fa fa-phone"></span>+(21)-234-999</li>
+                <li><span class="fa fa-search mr-2" aria-hidden="true"></span></li>
+                <li><i class="fa-solid fa-moon"></i></li>
+               
+            </ul>
         </div>
-    </div>
+        </div>
+      </div>
+<div class="form">
+    <h1>Get The Best Holiday Planned By Experts!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium, placeat error dicta delectus id fuga quo accusantium sapiente fugiat ipsum consectetur cumque 
+        </p>
+        </div>
 </body>
-</html>
