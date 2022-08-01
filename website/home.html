@@ -37,15 +37,63 @@
     li{
         padding-left: 20px;
         padding-top: 50px;
-        color: aliceblue;
+        color:white;
         font-size: 20px;
+        font-weight: 800;
     }
        .right-box{
       padding-left: 400px;
        }
    
+.form{
+    margin-left: 100px;
+}
+   .form1{
+    margin-top: 50px;
+    margin-left: 100px;
+    width:80%;
+    height:150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    
+   }  
+   label{
+    font-size: 20px;
+    font-weight: 800;
+   }  
+   input{
+    width: 280px;
+    border-radius: 5px;
+    height: 35px;
+   }
+   .dest select{
+   border-radius: 10px;
+    width: 280px;
+    height: 35px;
+   }
+   .activity select{
+   border-radius: 10px;
+    width: 280px;
+    height: 35px;
+   }
 
-       
+   .Duartion select{
+   border-radius: 10px;
+    width: 280px;
+    height: 35px;
+   }
+   button{
+    border-radius: 10px;
+    width: 280px;
+    height: 35px;
+    background-color: darkturquoise;
+   }
+   footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+   }
     </style>
 </head>
 <body>
@@ -74,7 +122,63 @@
       </div>
 <div class="form">
     <h1>Get The Best Holiday Planned By Experts!</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium, placeat error dicta delectus id fuga quo accusantium sapiente fugiat ipsum consectetur cumque 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium, placeat error <br>dicta delectus id fuga quo accusantium sapiente fugiat ipsum consectetur cumque 
         </p>
         </div>
+        <div class="form1">
+            <div class="name">
+                <Label>Name</Label><br>
+                <input type="text" placeholder="Enetr Name">
+            </div>
+           
+            <div class="dest">
+                <Label>Destination</Label><br>
+                <select>
+                    <option name="Any" id="">Any</option>
+                    <option name="Africa" id="">Africa</option>
+                    <option name="America" id="">America</option>
+                    <option name="southindia" id="">southindia</option>
+                    <option name="UAE" id="">UAE</option>
+                    <option name="Goa" id="">Goa</option>
+                </select>
+            </div>
+            <div class="activity">
+                <Label>Activity</Label><br>
+                <select name="activity">
+                    <option value="">Any</option>
+                    <option value="city-tours">City Tours</option>
+                    <option value="cultural-thematic-tours">Cultural &amp; Thematic Tours</option>
+                    <option value="family-friendly-tours">Family Friendly Tours</option>
+                    <option value="holiday-seasonal-tours">Holiday &amp; Seasonal Tours</option>
+                    <option value="indulgence-luxury-tours">Indulgence &amp; Luxury Tours</option>
+                    <option value="outdoor-activites">Outdoor Activites</option>
+                    <option value="relaxation-tours">Relaxation Tours</option>
+                    <option value="wild-adventure-tours">Wild &amp; Adventure Tours</option>
+                </select>
+               
+            </div>
+            <div class="Duartion">
+                <Label>Duration</Label><br>
+                <select name="duration">
+                   
+                        <option value="">Any</option>
+                        <option value="1">1 Day Tour</option>
+                        <option value="2">2-4 Days Tour</option>
+                        <option value="5">5-7 Days Tour</option>
+                        <option value="7">7+ Days Tour</option>
+                    
+                </select>
+            </div>
+            <div class="date">
+                <label>Date</label><br>
+                <input type="date" name="" placeholder="Date" required="">
+            </div>
+            <div class="Submit">
+                <label>Submit</label><br>
+                <button class="btn btn-style btn-primary w-100 btn-style">Submit</button>
+            </div>
+            </div>
+            <footer>
+
+            </footer>
 </body>
