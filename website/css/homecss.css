@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { 
+    font-size: 10px; 
+}
+/*===============Common class================*/
+.section{
+width: 100%;
+height: 100vh;
+background-image: url(../img/secimag.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+.container{
+width: 90%;
+margin: 0 auto;
+font-size: 2rem;
+font-family: 'Roboto', sans-serif;
+
+
+}
+/*============header css==================>*/
+.header-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    position:fixed;
+    font-weight: 800;
+    backdrop-filter:blur(40px);
+}
+.header-container-leftbox ul , .header-container-rightbox ul{
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.header-container-leftbox li , .header-container-rightbox li{
+    padding-left: 15px;
+}
+
+
