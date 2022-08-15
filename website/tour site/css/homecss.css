@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { 
+    font-size: 62.5%; 
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary-color:#40bad5;
+    --secondary-color:#ffc107;
+    --font-color:rgb(242, 242, 242);
+}
+@media screen and (max-width: 768px) {
+    html {
+      font-size: 50%;
+       }
+  }
+/*===============Common class================*/
+.section{
+width: 100%;
+height: 80vh;
+}
+li{
+  list-style: none;
+}
+.container{
+width: 80%;
+margin: 0 auto;
+font-size: 2rem;
+
+}
+.p-y{
+  margin-top: 2rem;
+}
+@media screen and (min-width: 576px) {
+    .container {
+      width: 536px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 728px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+  }
+  
+/*============header css==================>*/
+   
+.header-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    position:fixed;
+    backdrop-filter:blur(40px);
+    padding:20px;
+    
+}
+.header-container-leftbox
+{
+    display: flex;
+}
+.header-container-leftbox ul , .header-container-rightbox ul{
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.header-container-leftbox li , .header-container-rightbox li{
+    padding-left: 15px;
+}
+
+
+.header-container-leftbox h1{
+    color: #40bad5;
+}
+.header-container-leftbox li:hover , .header-container-rightbox li:hover{
+    color: #40bad5;
+}
+.btn{
+    padding: 1.6rem 3rem;
+  font-size: 1.6rem;
+  background-color: var(--primary-color);
+  border: none;
+  color:var(--font-color);
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+.menu-btn{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .header-container-leftbox ul {
+      display: none;
+    }
+    .header-container-rightbox {
+      display: none;
+    }
+  
+    .menu-btn {
+      padding: 1rem;
+      display: block;
+    }
+    .header{
+        width: 50%;
+    }
+  }
+  /*====================Landing Img=======================*/
+  .landing-image-section{
+    background-image: url(../img/backimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+  }
+  .header-text{
+    width: 50%;
+   text-align: center;
+   font-size: 2rem;
+}
+
+.header-text *{
+    line-height: 2;
+    text-align: center;
+}
+
+/* ===================== form css ========================*/
+
+.section-form-title p{
+    font-size: 2rem;
+}
+.section-form-details{
+    display: grid;
+    gap:30px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.box *{
+    padding:15px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: beige;
+    margin-top: 15px;    
+}
+.btn{
+background-color: var(--primary-color);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
+@media screen and (min-width: 992px) 
+{
+    .section-form-title {
+        width: 50%;
+    }   
+    .section-form-details{
+        grid-template-columns: repeat(3, 1fr);
+     
+    } 
+}
+/* ===================== Image Container css ========================*/
+
+.image-container{
+     display: grid;
+     }
+
+@media screen and (min-width: 992px) {
+    .image-container {
+     grid-template-columns: repeat(2, 1fr);
+    }
+  }
+.image-left-box{
+    background-image: url(../img/blog6.png);
+}
+.image-right-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: var(--font-color);
+    background-color: #11111140;
+    background-blend-mode: overlay;    
+   }
+.img1{
+    background-image: url(../img/blog1.jpg);
+}
+.img2{
+    background-image: url(../img/blog2.jpg);
+}
+.img3{
+    background-image: url(../img/blog3.jpg);
+}
+.img4{
+    background-image: url(../img/blog4.jpg);
+}
+.image-left-box{
+    display: flex;
+    align-items: center;
+}
+.des h1{
+    font-size: 3rem;
+    }
+.des p{
+    font-size: 1.6rem;
+}
+.section-form-title{
+  margin: 40px 60px;
+}
+/*======================Body container======================*/
+.body-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.title section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between;
+  
+}
+/*====================card section==================*/
+.card-body-section{
+  display: grid;
+  gap: 20px; 
+}
+.card1{
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color:#ccc;
+  padding: 3rem;
+}
+
+.card1-img img{
+  width:100%;
+  border-radius: 2rem;
+}
+.card1-details *{
+  margin-top: 1rem;
+}
+.card1-details h1{
+  font-size: 2.6rem;
+
+}
+.timeclass{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: grey;
+}
+.card1-details p{
+  font-size: 1.6rem;
+  color: grey;
+}
+.card-footer h4{
+  color: #40bad5;
+}
+.card-footer{
+  margin:3rem 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid grey;
+  padding-top: 1rem;
+
+
+}
+.card-footer i{
+  color: grey;
+  background-color: aliceblue;
+  border-radius: 70px;
+  padding: .6rem 1rem;
+}
+@media screen and (min-width:992px) {
+  .card-body-section{
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+}
+/*======================================== Image with details===========================*/
+  .main-container{
+    height:100vh;
+    display: grid;
+    font-size: 1.6rem;
+   color:black;
+   padding-left: 2rem;
+   gap: 3rem;
+ }
+ .main-container-leftbox{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .main-container-leftbox h3 , .main-container-leftbox p{
+   color: var(--font-color);
+   font-size: 4rem;
+    }
+    .left-contant *{
+      padding-top: 2rem;
+    }
+
+ .main-container-rightbox{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem;
+ }
+ img{
+   width: 600px;
+   height: auto;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   border-radius: 2rem;
+ }
+ .btn3{
+   background-color:var(--primary-color);
+   color: white;
+   padding: 1rem 2rem;
+   border-radius: 1rem;
+   margin: 2rem;
+ }
+
+  @media screen and (min-width:992px){
+   .main-container{
+     grid-template-columns: repeat(2 , 1fr);
+   }
+  }
+/*=========================== Image Landing sction-2===================*/
+.landing-image-section1{
+     background-image: url(../img/blog6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+     }
+
+  /*=================== Footer section=====================*/
+  
+footer {
+
+  background-color: #222;
+  color: #aaa;
+}
+
+.footer-container {
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.footer-left {
+  display: grid;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-left {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+.footer-left .left-box {
+  padding: 1rem;
+}
+
+.right-box {
+  padding: 1rem;
+}
+
+.footer-container .footer-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.footer-container ul {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer-container ul li i {
+  margin-right: 1rem;
+}
+
+.footer-right {
+  display: grid;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-right {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+.footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.footer-gallery img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+footer p {
+  text-align: center;
+  padding: 2rem 0;
+}
+      
