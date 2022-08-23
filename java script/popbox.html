@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function notify(){
+            alert("hello world, is a aert box");
+        }
+        function confirmation(){
+            if(confirm("ok")){
+                document.getElementById("p1").innerHTML="You click on ok"
+            }
+            else{
+                document.getElementById("p1").innerHTML="You click on cancel"
+            }
+        }
+        function prompt1(){
+            var user=prompt("Enter your name")
+            if (user=="" || user==null)
+                {
+                    document.getElementById("p2").innerHTML="You can not enterder your name" 
+                }
+                else{
+                    document.getElementById("p2").innerHTML="You name is:" + user;
+                }
+            }
+    
+    </script>
+</head>
+<body>
+    <button  value="click me" onclick="notify()" >Click Me</button><br><br><br>
+
+   <button value="Confirm" onclick="confirmation()">Confirmation</button>
+   <p id="p1"></p>
+   <button value="prompt" onclick="prompt1()"> Prompt</button>
+   <p id="p2"> </p>
+</body>
+</html>

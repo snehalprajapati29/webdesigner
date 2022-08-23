@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function pattern(){
+          let patn = document.form1.num.value;
+        var m, n;
+        for(m=1;m<=patn;m++)
+        {
+        for(n=m;n<=patn;n++)
+        {
+        document.write("*");
+        }
+        document.write('<br/>');
+        }
+      }
+        </script>
+</head>
+<body>
+  <form action="#" name="form1" onsubmit="pattern()">
+        <input type="text" name="num" placeholder="Enter number">
+        <input type="submit" name="submit" value="display">
+    </form> 
+</body>
+</html>
