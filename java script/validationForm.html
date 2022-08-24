@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-image: linear-gradient(to left,lightblue , rgb(230, 148, 148));
+        }
         .btn{
             background-color: aqua;
             color: red;
@@ -18,39 +21,38 @@
             font-size: 20PX;
             border-radius: 10PX;
        }
-       .form1{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-       }
+ form{
+    text-align: center;
+ }     
+ 
     </style>
  <script>
       function check(){
-        var num1=document.form1.password1.value;
-        var num2=document.form1.password2.value;
+        let psw1=document.getElementById("pswd1");
+        let psw2=document.getElementById("pswd2");
       
-            if(num1 == num2){
-                document.getElementById("p1").innerHTML="password are same";
+            if(psw1 == psw2){
+               document.getElementById("p1").innerHTML="Your password are same"
             }
             else{
-                document.getElementById("p1").innerHTML="password are not same";
+                document.getElementById("p1").innerHTML="Your password are not same"
             }
-        }    
-</script>
+        }   
+</script>   
 </head>
 <body>
-    <div class="form1">   
-    <form action="" method="" name="form1" onsubmit="return check()" >
+    <p id="p1"></p>
+     <form action="" method="" name="form1" onsubmit="check()" >
         <h1>Sign Up Form</h1><br>
        <p> Enter your name : </p><input type="text" name="name1"  /><br>
        <p> Enter Password: </p><input type="password" name="password1" id="pswd1"/><br>
        
        <p> Enter Confiormation Password: </p><input type="password" name="password2" id="pswd2" /><br>
        <input type="submit" class="btn" name="submit" value="check"  />
-       <p id="p1"></p>
-    </form>
+     </form>
+ 
+    
    
-   
-</div>
+
 </body>
 </html>
