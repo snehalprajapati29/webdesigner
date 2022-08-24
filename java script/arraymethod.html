@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let color_name = ["red", "yellow", "green", "skyblue"];
+        let cl;
+        for(cl of color_name){
+        document.writeln(cl + "<br>");
+        }
+        //sort data in assending order
+        document.write(color_name.sort() + "<br>")
+        //sort data in desending order
+        //if we want to aarrange data in decending order first sort data in assending order
+        document.write(color_name.reverse() + "<br>")
+        //if we want to one data from array use pop() method
+        document.write(color_name.pop() + "<br>")
+        //if we want to add data in array use push() method
+        color_name.push("pink" , "green", "blue")
+        document.writeln(color_name)
+        </script>
+</body>
+</html>
