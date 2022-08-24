@@ -21,28 +21,28 @@
             font-size: 20PX;
             border-radius: 10PX;
        }
- form{
-    text-align: center;
- }     
+     form{
+        text-align: center;
+     }
  
     </style>
  <script>
       function check(){
-        let psw1=document.getElementById("pswd1");
-        let psw2=document.getElementById("pswd2");
+        var num1=document.form1.password1.value;
+        var num2=document.form1.password2.value;
       
-            if(psw1 == psw2){
-               document.getElementById("p1").innerHTML="Your password are same"
+            if(num1 == num2){
+                alert("password are same");
             }
             else{
-                document.getElementById("p1").innerHTML="Your password are not same"
+                alert("password are not same");
             }
         }   
 </script>   
 </head>
 <body>
-    <p id="p1"></p>
-     <form action="" method="" name="form1" onsubmit="check()" >
+   
+   <form action="" method="" name="form1" onsubmit="return check()">
         <h1>Sign Up Form</h1><br>
        <p> Enter your name : </p><input type="text" name="name1"  /><br>
        <p> Enter Password: </p><input type="password" name="password1" id="pswd1"/><br>
@@ -50,8 +50,8 @@
        <p> Enter Confiormation Password: </p><input type="password" name="password2" id="pswd2" /><br>
        <input type="submit" class="btn" name="submit" value="check"  />
      </form>
- 
-    
+   
+  
    
 
 </body>
