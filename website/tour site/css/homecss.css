@@ -306,13 +306,13 @@ background-color: var(--primary-color);
     display: grid;
     font-size: 1.6rem;
    color:black;
-   padding-left: 2rem;
-   gap: 3rem;
+   margin-bottom: 10rem;
  }
  .main-container-leftbox{
    display: flex;
    justify-content: center;
    align-items: center;
+  
  }
  .main-container-leftbox h3 , .main-container-leftbox p{
    color: var(--font-color);
@@ -327,6 +327,7 @@ background-color: var(--primary-color);
    justify-content: center;
    align-items: center;
    margin: 1rem;
+   
  }
  img{
    width: 600px;
@@ -348,7 +349,15 @@ background-color: var(--primary-color);
    .main-container{
      grid-template-columns: repeat(2 , 1fr);
    }
-  }
+    }
+    @media screen and (max-width:572px) {
+      .main-container-leftbox , .main-container-rightbox{
+        width: 100%;
+              }
+      .main-container-leftbox img{
+                width:100%;       
+              }      
+    }
 /*=========================== Image Landing sction-2===================*/
 .landing-image-section1{
      background-image: url(../img/blog6.png);
@@ -358,8 +367,7 @@ background-color: var(--primary-color);
      align-items: center;
     justify-content: center;
      }
-
-  /*=================== Footer section=====================*/
+/*=================== Footer section=====================*/
   
 footer {
 
@@ -380,12 +388,7 @@ footer {
 
 .footer-left {
   display: grid;
-}
-
-@media screen and (min-width: 992px) {
-  .footer-left {
-    grid-template-columns: 70% 30%;
-  }
+  grid-template-columns: 70% 30%;
 }
 
 .footer-left .left-box {
@@ -414,13 +417,10 @@ footer {
 
 .footer-right {
   display: grid;
+  grid-template-columns: 70% 30%;
 }
 
-@media screen and (min-width: 992px) {
-  .footer-right {
-    grid-template-columns: 70% 30%;
-  }
-}
+
 
 .footer-gallery {
   display: grid;
