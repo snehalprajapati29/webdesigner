@@ -36,20 +36,24 @@
         
               if(num1 == num2){
                  document.getElementById("p1").innerHTML="Password are same"
+                 return false;
               }
               else{
                   document.getElementById("p1").innerHTML="password are not same";
+                  return false;
               }
           }   
   </script>   
-   <p id="p1"></p>
+   
    <form action="" method="" name="form1" onsubmit="return check()">
         <h1>Sign Up Form</h1><br>
        <p> Enter your name : </p><input type="text" name="name1"  /><br>
        <p> Enter Password: </p><input type="password" name="password1" id="pswd1"/><br>
        
        <p> Enter Confiormation Password: </p><input type="password" name="password2" id="pswd2" /><br>
+       <p id="p1"></p><br>
        <input type="submit" class="btn" name="submit" value="check"  />
+       <input type="reset" class="btn" name="reset" value="reset"  />
      </form>
 </body>
 </html>
