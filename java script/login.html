@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="loginjavascript.js"></script>
     <style>
         body{
             background-image: linear-gradient(to left , rgba(110, 110, 177, 0.555),  rgb(165, 126, 133));
@@ -13,6 +14,9 @@
             text-align: center;
             font-size: 1.6rem;
             color: aquamarine;
+        }
+        span{
+            color:red
         }
         input{
             background-color: transparent;
@@ -33,12 +37,17 @@
     </style>
 </head>
 <body>
-    <form action="" >
-        <h1>Form for personal details</h1>
-        Enter first name : <input type="text"><br>
-        Enter middle name:<input type="text"><br>
-        Enter last name :  <input type="text"><br><br>
-                        <input type="submit" class="btn">
+    <form action="" name="form1" onsubmit="return validation()">
+        <h1>Log in</h1>
+       <lable>User name</lable>
+       <span>*</span>
+        <input type="text" name="uname" id="uname"><br>
+        <span id="msg1"></span><br>
+        <lable>Password</lable>
+         <span>*</span>
+        <input type="password" name="pass" id="pass"><br>
+        <span id="msg2"></span><br><br>
+        <input type="submit" class="btn">
     </form>
 </body>
 </html>
