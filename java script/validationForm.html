@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    
     <style>
         body{
             background-image: linear-gradient(to left,lightblue , rgb(230, 148, 148));
@@ -26,71 +28,46 @@
      }
  
     </style>
- <script>
-
-      function check(){
-        let fname=document.form1.fname.value
-        if(fname=="" || fname==null){
-           document.getElementById("p1").innerHTML="Please Enter your first name"
-            document.form1.fname.focus()
-            return false
-        }
-        else{
-            document.getElementById("p1").innerHTML=""           
-        }
-
-        let sname=document.form1.sname.value
-        if(sname=="" || sname==null){
-            document.getElementById("p2").innerHTML="Please Enter your Second name"
-            document.form1.fname.focus()
-            return false
-        }
-        else{
-            document.getElementById("p2").innerHTML=""
-               }
-
-        let lname=document.form1.lname.value
-        if(lname=="" || lname==null){
-            document.getElementById("p3").innerHTML="Please Enter your Last name"
-            document.form1.fname.focus()
-            return false
-        }
-        else{
-            document.getElementById("p3").innerHTML=""
-            }
-        
-        var num1=document.form1.password1.value;
-        var num2=document.form1.password2.value;
-      
-            if(num1 == num2){
-                document.getElementById("p4").innerHTML=("password are same");
-                return false
-            }
-            else{
-                document.getElementById("p4").innerHTML=("password are not same");
-                return false
-            }
-        }   
-</script>   
-</head>
+    <script src="validationscript.js"></script>
+ </head>
 <body>
    
-   <form action="" method="" name="form1" onclick="return check()">
+   <form action="" method="" name="form1" onsubmit="return check()">
         <h1>Sign Up Form</h1>
-       <p> Enter your First name : <input type="text" name="fname"  /></p>
+       <label> Enter your First name :</label> <input type="text" name="fname"  />
        <p id="p1"></p>
-       <p> Enter your Second name : <input type="text" name="sname"  /></p>
+       <label> Enter your Second name :</label><input type="text" name="sname"  />
        <p id="p2"></p>
-       <p> Enter your Last name : <input type="text" name="lname"  /></p>
+       <label> Enter your Last name :</label> <input type="text" name="lname"  />
        <p id="p3"></p>
-       <p> Enter Password: <input type="password" name="password1" id="pswd1"/></p>       
-       <p> Enter Confiormation Password: <input type="password" name="password2" id="pswd2" /></p><br>
-       <p id="p4"></p>
+        <label>Gender:</label><input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female     <br>
+        <p id="p5"></p>
+        <label>Subject:</label><input type="checkbox" name="c1">Java
+        <input type="checkbox" name="c2">Html
+        <input type="checkbox" name="c3">C++
+        <input type="checkbox" name="c4">Bootstrap<br>
+        <p id="p6"></p>
+        <label> Enter Password  :</label> <input type="password" name="password1" id="pswd1"/> <br>      
+        <label> Enter ConfiormPassword:</label> <input type="password" name="password2" id="pswd2" /><br>
+        <p id="p4"></p>
+        <label>city:</label><select name="city">
+                            <option value="-1">-----select----</option>
+                            <option >Surat</option>
+                            <option >Navsari</option>
+                            <option >Chikhli</option>
+                            <option >Vapi</option>
+
+        </select><br>
+        <p id="p7"></p>
+        <label>MobileNo. : </label><input type="text" name="mno" maxlength="10"><br>
+        <p id="p8"></p>
+        <label>Address : </label><textarea name="add" id="" cols="30" ROWS="3"></textarea><br>
+        <p id="p10"></p>
+        <label>Email : </label><input type="email" name="email"><br>
+        <p id="p9"></p>
+       
        <input type="submit" class="btn" name="submit" value="check"  />
      </form>
-   
-  
-   
-
 </body>
 </html>
