@@ -7,6 +7,10 @@
             document.form1.fname.focus()
             return false
         }
+        else{
+        document.getElementById("p1").innerHTML=""
+        }
+
      //second name validation
         let sname=document.form1.sname.value
         if(sname=="" || sname==null){
@@ -14,6 +18,10 @@
             document.form1.fname.focus()
             return false
         }
+        else{
+            document.getElementById("p2").innerHTML=""
+        }
+
      //last name validation
         let lname=document.form1.lname.value
         if(lname=="" || lname==null){
@@ -21,12 +29,18 @@
             document.form1.fname.focus()
             return false
         }
+        else{
+            document.getElementById("p3").innerHTML=""
+        }
        //gender validation
             let male=document.form1.gen[0].checked;
             let female=document.form1.gen[1].checked;
             if(male==false && female==false){
-                document.getElementById("p5").innerHTML=("Please select Gender");
+                document.getElementById("p5").innerHTML="Please select Gender";
                 return false
+            }
+            else{
+                document.getElementById("p5").innerHTML="";
             }
  //subject validation
             let c1=document.form1.c1.checked
@@ -39,6 +53,10 @@
                 document.getElementById("p6").innerHTML=("Please select Subject");
                 return false 
             }
+            else{
+                document.getElementById("p6").innerHTML="";
+            }
+
            //password validation  
       var num1=document.form1.password1.value;
         var num2=document.form1.password2.value;
@@ -47,11 +65,18 @@
                 document.form1.password1.focus()
                 return false
             }
+            else{
+                document.getElementById("p4").innerHTML="";
+            }
             if(num1!= num2){
                 document.getElementById("p4").innerHTML=("password are not");
                 document.form1.password2.focus()
                 return false
             }
+            else{
+            document.getElementById("p4").innerHTML="";
+            }
+
              //city validation
             let city=document.form1.city.value
             if(city== -1){
@@ -59,6 +84,10 @@
                 document.form1.city.focus()
                 return false
             }
+            else{
+                document.getElementById("p7").innerHTML="select city";
+            }
+
              //Mobile number validation
             let mno=document.form1.mno.value
             if(mno==""){
@@ -66,12 +95,19 @@
                 document.form1.mno.focus()
                 return false
             }
+            else{
+                document.getElementById("p8").innerHTML="";
+            }
             if(isNaN(mno))
             {
                 document.getElementById("p8").innerHTML=("Enter only digits");
                 document.form1.mno.focus()
                 return false
             }
+            else{
+                document.getElementById("p8").innerHTML="";
+            }
+
              //Address name validation
             let area=document.form1.add.value
             if(area.length <=20)
@@ -79,6 +115,9 @@
                 document.getElementById("p10").innerHTML=("Enter address character more then 20 ");
                 document.form1.add.focus()
                 return false
+            }
+            else{
+                document.getElementById("p10").innerHTML="";
             }
              // Email validation
             let mail=document.form1.email.value
