@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        body{
+            background-color: aqua;
+            color: brown;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        button{
+            background-color: blueviolet;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        input{
+            padding:10px;
+            border-radius: 10px;
+        }
+    </style>
+     <script>
+      function table() {
+        var number;
+        var result = "";
+
+        number = Number(document.getElementById("number").value);
+
+        for(var i = 1; i<= 10; i++){
+          result = result +number + "*" + i + "=" + number *i+"<br> <br>";
+        }
+
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    Enter the number : <input id="number" /><br>
+    <button onclick="table()" value="Display">Dispaly</button>
+    <div id="result">
+  </body>
+</html>
+

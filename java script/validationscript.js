@@ -85,7 +85,7 @@
                 return false
             }
             else{
-                document.getElementById("p7").innerHTML="select city";
+                document.getElementById("p7").innerHTML="";
             }
 
              //Mobile number validation
