@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            border: 2px black solid;
+            background-color: red;
+        }
+    </style>
+        
+</head>
+    <body id="container">
+        <div id="box1"></div>
+        <input type="color" id="change">
+        <button onclick="changecolor()">Change color</button>
+         <script>
+           
+            function changecolor(){
+                let change1 = document.getElementById("change").value
+                box1.style.backgroundColor = change1
+            } 
+    </script>
+</body>
+</html>
