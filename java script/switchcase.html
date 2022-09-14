@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 100px auto;
+        }
+        input , button {
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 50px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Using Switch..case</h3>
+    <h1>Month name</h1>
+    <input type="text" placeholder="Enter month number" id="m1">
+    <button id="month" onclick="display()">month</button>
+    <p id="p1"></p>
+    <script>
+        function display(){
+            let x=document.getElementById("m1").value;
+            x=Number(x);
+            switch(x){
+                     case 1:
+                    document.getElementById("p1").innerHTML="January"
+                    break;
+                
+                    case 2:
+                    document.getElementById("p1").innerHTML="February"
+                    break;
+                    case 3:
+                    document.getElementById("p1").innerHTML="March"
+                    break;
+                    case 4:
+                    document.getElementById("p1").innerHTML="April"
+                    break;
+                    case 5:
+                    document.getElementById("p1").innerHTML="May"
+                    break;
+                    case 6:
+                    document.getElementById("p1").innerHTML="June"
+                    break;
+                    case 7:
+                    document.getElementById("p1").innerHTML="Julay"
+                    break;
+                    case 8:
+                    document.getElementById("p1").innerHTML="August"
+                    break;
+                    case 9:
+                    document.getElementById("p1").innerHTML="September"
+                    break;
+                    case 10:
+                    document.getElementById("p1").innerHTML="Octomber"
+                    break;
+                    case 11:
+                    document.getElementById("p1").innerHTML="November"
+                    break;
+                    case 12:
+                    document.getElementById("p1").innerHTML="December"
+                    break;
+                    default:
+                    document.getElementById("p1").innerHTML="Enter only 1 to 12 month number"
+                    break
+                  }
+                  
+                }
+   </script>
+</body>
+</html>
