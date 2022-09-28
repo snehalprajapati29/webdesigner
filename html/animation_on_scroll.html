@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+        
+<style>
+    body{
+        background-color: black;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+    }
+    .box1{
+        background-color: blue;
+    }
+    .box2{
+        background-color: aqua;
+    }
+    .box3{
+        background-color: blueviolet;
+    }
+    .box4{
+        background-color: chartreuse;
+    }
+    .box5{
+        background-color: darkcyan;
+    }
+    .box6{
+        background-color: dodgerblue;
+    }
+</style>
+
+</head>
+
+<body>
+    
+    <div class="box box1" data-aos="fade-up"></div>
+    <div class="box box2" data-aos="fade-right"></div>
+    <div class="box box3" data-aos="fade-left"></div>
+    <div class="box box4" data-aos="fade-up-right"></div>
+    <div class="box box5" data-aos="flip-left"></div>
+   <div class="box box6" data-aos="fade-up" data-aos-duration="3000"></div>
+   <script>
+    AOS.init();
+</script> 
+</body>
+</html>
